@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Davide D'Amico</title>
+    <link href="https://fonts.googleapis.com/css?family=Jura:400,700" rel="stylesheet">
+    <link rel="shortcut icon" type="img/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <div class="icon-bar">
+      <a href="https://github.com/drdavide" class="github"><i class="fa fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/davide~damico/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    </div>
+
+
+    <header class="header clearfix">
+        <a href="index.html"><IMG class="header__logo" SRC="img/logo_l.png" ALT="some text" WIDTH=235 HEIGHT=48></a>
+        <a href="" class="header__icon-bar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <ul class="header__menu animate">
+          <li class="header__menu__item"><a style="text-decoration: none;" href="index.html">Home</a></li>
+          <li class="header__menu__item"><a style="text-decoration: none;" href="about.html">About me</a></li>
+          <li class="header__menu__item"><a style="text-decoration: none;" href="mailto:drdavide@gmail.com">Contact me</a></li>
+        </ul>
+    </header>
+
+
+    <section class="cover">
+      <div class="cover__filter">
+        <div class="cover__caption">
+          <div class="cover__caption__copy">
+            <h1>Welcome to my website</h1>
+            <h2>davidedamico.com</h2>
+            <a href="mailto:drdavide@gmail.com" class="button">Email me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards clearfix">
+      <a href="about.html"><div class="card">
+        <img class="card__image" src="img/pic_1MB.jpg" alt="Profile_pic">
+          <div class="card__copy">
+            <h3>About me</h3>
+            <p>Biography </p>
+          </div>
+      </div></a>
+      <a href="mailto:drdavide@gmail.com"><div class="card">
+        <img class="card__image" src="img/mail.png" alt="Contact">
+          <div class="card__copy">
+            <h3>Contact me</h3>
+            <p>Click here to contact me</p>
+          </div>
+      </div></a>
+      <a href="https://scholar.google.com/citations?user=krkliM8AAAAJ&hl"><div class="card">
+        <img class="card__image" src="img/scholar.png" href="https://scholar.google.com/citations?user=krkliM8AAAAJ&hl" alt="People">
+          <div class="card__copy">
+            <h3>Google scholar page</h3>
+            <p>Link</p>
+          </div>
+      </div></a>
+    </section>
+
+
+    <footer class="footer">
+      <p style="color:#fff">Copiright © 2019 davidedamico.com</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    	 $(document).ready(function(){
+    			$(".header__icon-bar").click(function(e){
+    				$(".header__menu").toggleClass('is-open');
+    				e.preventDefault();
+    			});
+    	 });
+    </script>
+
+  </body>
+</html>
